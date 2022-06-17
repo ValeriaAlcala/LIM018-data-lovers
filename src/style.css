@@ -1,0 +1,23 @@
+html{
+    width: auto;
+}
+
+body{
+    background-color: #C7E3E3;
+    height: auto;
+    width: auto;
+}
+
+header{
+    background-color: #C7E3E3;
+}
+
+#imagen1{
+    height: 85px;
+    width: 175px;
+}
+
+ul{
+    align-items: center;
+    color: #4A7375;
+}
