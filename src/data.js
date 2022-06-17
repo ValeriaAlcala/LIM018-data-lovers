@@ -15,15 +15,11 @@ export const prueba= (data) => {
 let imagenhuman = filtroHuman.map(x=>x.img);
 
 return imagenhuman
+
+
 }
 
-export const title=(data)=>{
-  const image=
-  data.flims[0].title.filter(x=>x);
 
-let title=image.map(x=>x.poster);
-  return title
-}
 
 /*export const searchName=(data)=>{
   return data.filter((data)=>{

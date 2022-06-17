@@ -17,4 +17,21 @@ function viewImage(){
 }
 console.log(data);
 
+const imagenes=prueba(data);
+prueba1();
+function prueba1(){
+
+  for(let i=0; i<imagenes.length; i++){
+    const nuevasImg=document.createElement('img');
+    const imagenPadre=document.getElementById("nuevasImg")
+
+    imagenPadre.appendChild(nuevasImg);
+    nuevasImg.setAttribute("src",imagenes[i]);
+    nuevasImg.setAttribute("class","nuevasImg")
+  }
+
+}
+
+
 console.log(prueba(data));
+
