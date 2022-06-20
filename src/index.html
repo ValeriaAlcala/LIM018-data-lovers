@@ -8,30 +8,38 @@
   <body>
 
     <header>
-      <img src="images/logo-studio.png" id="imagen1" alt="Logo Studio Ghibli">
+      <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli">
     </header>
 
-    <div id="ventana1">
+    <nav>
+    </nav> 
+
+    <main>
+    <div id="homepage">
       <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli">
-      <nav>
-        <ul>
-          <li><a href="#">About Studio</a></li>
-          <li><a href="#">Films</a></li>
-          <li><a href="#">Statistics</a></li>
-        </ul>
-      </nav>
+        <div id="buttonsFather">
+          <input type="button" id="firstbutton" class="buttons" value="About Studio">
+          <input type="button" id="secondbutton" class="buttons" value="Films">
+          <input type="button" id="thirdbutton" class="buttons" value="Statistics">
+        </div>
+    </div> 
 
-      <main>
+    <div id="studiopage">
+      <img src="images/background-image.jpeg" id="background-window2" alt="Imagen con personajes de las películas del Studio Ghibli">
+    </div>
 
-        <input type="text" value="" placeholder="" id="buscador">
+    <div id="filmspage">
+        <input type="text" value="" placeholder="Search" id="buscador"> 
         <button type="button" id="btn-buscar"> BUSCAR </button>
         <div id="imagenes"></div>
         <div id="nuevasImg"></div>
         <script src="main.js" type="module"></script>
+    </div>
 
       </main>
       <footer></footer>
-    </div>
+
+    </main>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>
