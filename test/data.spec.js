@@ -1,13 +1,19 @@
-import { example, anotherExample } from '../src/data.js';
+import { producerFilter, anotherExample } from '../src/data.js';
 
 
-describe('example', () => {
+describe('producerFilter', () => {
   it('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof producerFilter).toBe('function');
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('returns filtered by producer', () => {
+    const data = [{"producer":"Isao Takahata"},{"producer":"Hayao Miyazaki"}]
+    expect(producerFilter(data,"Isao Takahata")).toEqual([{"producer":"Isao Takahata"}]);
+  });
+
+  it('returns producer doesnt exist', () => {
+    const data = [{"producer":"Isao Takahata"},{"producer":"Hayao Miyazaki"}]
+    expect(producerFilter(data,"hola")).toEqual([]);
   });
 });
 
