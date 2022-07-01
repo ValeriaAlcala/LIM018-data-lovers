@@ -1,13 +1,10 @@
-#studiopage{
+.pages{
     display: none;
 }
 
-#filmspage{
-    display: none;
-}
-
-#infoFilmsPage{
-    display: none;
+header{
+    display: flex;
+    justify-content: center;
 }
 
 html{
@@ -17,37 +14,19 @@ html{
 body{
     height: auto;
     width: auto;
-    font-family: "Inter";
     background-color: #C7E3E3;
 }
 
+#logo-mainpage{
+    background: none;
+    border: none;
+}
+
 .logo{
-    height: 85px;
-    width: 175px;
-}
-
-body{
-    height: auto;
-    width: auto;
-    font-family: "Inter";
-    background-color: #F5DDDD;
-}
-
-.buttons{
-    border-radius: 12px;
-    background-color: #FFFFFF;
-    border-style: solid;
-    border-color: #FFFFFF;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    color: #4A7375;
-    font-family: "Inter";
-    font-style: normal;
-    font-size: 18px;
-    position: relative;
-    top: 20px;
+    height: 95px;
+    width: 185px;
+    padding: 8px;
+    cursor: pointer;
 }
 
 #buttonsFather{
@@ -55,46 +34,60 @@ body{
     justify-content:space-around;
 }
 
-#background-window2{
-    width: 1265px;
-    height: 550px;
+.buttons{
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #FFFFFF;
+    padding: 3px 40px;
+    color: #4A7375;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    position: relative;
+    top: 12px;
+}
+
+#studiopage{   
     position: relative;
 }
 
-#rectangle1{
-    background-color: #FFFFFF;
-    opacity: 80%;
-    mix-blend-mode: normal;
-    width: 1000px;
-    height: 500px;
+#background-image{
     position: absolute;
+    height: 505px;
+    width: 1262px;
 }
 
-#studiopage{
-    background: #F5DDDD;
-    width: 1152px;
-    height: 592px;
-    
+#rectangle1{
+    position: absolute;
+    opacity: 85%;
+    text-align: center;
+    background-color: #FFFFFF;
+    display: flex;
+    margin-top: 42px;
+    margin-left: 190px;
+    justify-content: space-between;
+}
+
+#founders{
+    height: 340px;
+    width: 215px;
+    margin: 40px;
 }
 
 h1{
-    font-family: "Inter";
-    font-style: normal;
-    font-size: 34px;
+    font-family: 'Lora', serif;
+    font-size: 40px;
     color: #4A7375;
-    font-weight: 500;
     text-align: center;
-    padding-top: 40px;
+    margin-top: 45px;
 }
 
 h2{
-    font-family: "Inter";
-    font-style: normal;
-    font-size: 20px;
-    color: #4A7375;   
-    font-weight: 400;
-    text-align: center;
-    width: 600px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    color: #4A7375;
+    width: 550px;
+    margin-right: 55px;
 }
 
 #buscador{
@@ -105,13 +98,13 @@ h2{
     color: #4A7375;
     width: 190px;
     height: 18px;
-    font-family: "Inter";
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
 }
 
 ::placeholder{
     color: #FFFFFF;
-    font-family: "Inter";
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
 }
 
@@ -126,16 +119,8 @@ h2{
     background-color: #C7E3E3;
 }
 
-.tittle{
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 100;
-    font-size: 20px;
-    color: #4A7375;
-}
-
 .listProducer,.listDirector{
-    font-family: "Inter";
+    font-family: 'Libre Franklin', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -170,3 +155,49 @@ li{
     height: 246px;
     cursor: pointer;
 }
+
+#containerInfoFilmsPage{
+    background-color: #F5DDDD;
+    border-radius: 20px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+#containerFilmData{
+    background-color:#FFFFFF;
+    display: flex;
+}
+
+#poster_infoFilmsPage{
+    padding-left: 20px;
+    width: 195px;
+    height: 297px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#filmsInfo{
+    padding-left: 17px;
+    padding-right: 39px;
+}
+
+.characters,.places,.vehicles{
+    cursor: pointer;
+}
+
+#title{
+    font-family: 'Lora', serif;
+    font-size: 34px;
+}
+
+#releaseDate,#producer, #director{
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#description{
+    font-size: 17px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+

@@ -3,38 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap" rel="stylesheet">    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+ 
   </head>
   <body>
 
     <header>
-      <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli">
+      <button id="logo-mainpage">
+        <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli"></a>
+      </button>
     </header>
 
     <nav>
-    </nav> 
+    </nav>  
 
     <main>
     <div id="homepage">
-      <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli">
+      <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli"> 
         <div id="buttonsFather">
           <input type="button" id="firstbutton" class="buttons" value="About Studio">
           <input type="button" id="secondbutton" class="buttons" value="Films">
           <input type="button" id="thirdbutton" class="buttons" value="Statistics">
         </div>
-    </div> 
+    </div>
 
-    <div id="studiopage">
-      <img src="images/background-image.jpeg" id="background-window2" alt="Imagen con personajes de las películas del Studio Ghibli">
-        
-      <div id="rectangle1">
-        <h1>About Studio</h1>
-        <br>
-        <h2>Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films. Its mascot and most recognizable symbol is a character named Totoro, a giant catlike spirit from the 1988 anime film My Neighbor Totoro. Among the studio's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008). The studio was founded on June 15, 1985, by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several games.</h2>
+
+    <div id="studiopage" class="pages">
+      <img src="images/background-image.jpeg" id="background-image">
+        <div id="rectangle1">
+
+          <div id="foundersimage">
+            <img src="images/founders.jpeg" id="founders" alt="studio ghibli founders">
+          </div>
+
+          <div id="text">
+            <h1>About Studio Ghibli</h1>
+            <h2>Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films. Its mascot and most recognizable symbol is a character named Totoro, a giant catlike spirit from the 1988 anime film My Neighbor Totoro. Among the studio's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008). The studio was founded on June 15, 1985, by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several games.</h2>
+          </div>
+
+        </div>   
       </div>
     </div>
 
-    <div id="filmspage">
+    <div id="filmspage" class="pages">
       <input type="text" placeholder="Search" id="buscador"> 
       <button type="button" id="btn-buscar"> BUSCAR </button>
 
@@ -63,29 +82,70 @@
 
           </div>
         </div>
-
-       <div id="filmPosterImages" class="filmPosterImages">
+        <div id="filmPosterImages" class="filmPosterImages">
        </div>
-
       </div>
     </div>
 
-    <div id="infoFilmsPage" class="infoFilmsPage">
+    <div id="infoFilmsPage" class="pages">
 
-        <div id="poster_infoFilmsPage"></div>
-        <h1 id="title" class="dataInfoFilm"></h1>
-        <h2 id="description" class="dataInfoFilm"></h2>
-        <h3 id="director" class="dataInfoFilm"></h3>
-        <h3 id="producer" class="dataInfoFilm"></h3>
-        <h4 id="releaseDate" class="dataInfoFilm"></h4>
-        <h4 id="rtScore" class="dataInfoFilm"></h4>
+      <div id="containerInfoFilmsPage">
+        
+        <div id="containerFilmData">
+          <div id="poster_infoFilmsPage"></div>
+          <div id="filmsInfo">
+            <div id="title" class="dataInfoFilm"></div>
+            <br> 
+            <div id="releaseDate" class="dataInfoFilm"></div>
+            <br>
+            <div id="description" class="dataInfoFilm"></div>
+            <br>
+            <div id="director" class="dataInfoFilm"></div>
+            <br>
+            <div id="producer" class="dataInfoFilm"></div>
+            <br>
+            <div id="rtScore" class="dataInfoFilm"></div>
+          </div>
+        </div>  
 
-        <div class="characters-places-and-vehicles"></div>
-          <div id="characters" class="characters"></div>
-          <div id="places" class="places"></div>
-          <div id="vehicles" class="vehicles"></div>
+        <div class="characters-places-and-vehicles">
+          <p class="titlesbyData">characters</p>
+            <div id="characters" class="characters"></div>
+
+          <p class="titlesbyData">Places</p>
+            <div id="places" class="places"></div>
+
+          <p class="titlesbyData">Vehicles</p>  
+            <div id="vehicles" class="vehicles"></div>
+        </div>
+      </div>  
 
     </div>
+
+      <div id="popupPage" class="pages">
+        <div id="infoImg">
+          <h5 id="characterimg" class="generalInfo"></h5>
+          <h5 id="locationimg" class="generalInfo"></h5>
+        </div>
+
+        <div id="infoData">
+          <h5 id="charactername" class="generalInfo"></h5>
+          <h5 id="charactergender" class="generalInfo"></h5>
+          <h5 id="characterage" class="generalInfo"></h5>
+          <h5 id="charactereyes_color" class="generalInfo"></h5>
+          <h5 id="characterhair_color" class="generalInfo"></h5>
+          <h5 id="characterspecie" class="generalInfo"></h5>
+
+          <h5 id="locationName" class="generalInfo"></h5>
+          <h5 id="locationClimate" class="generalInfo"></h5>
+          <h5 id="locationTerrain" class="generalInfo"></h5>
+          <h5 id="locationSurface_Water" class="generalInfo"></h5>
+          <h5 id="locationResidents" class="generalInfo"></h5>
+        </div>
+      
+        <input type="button" id="close" value="x">
+
+      </div>
 
   </main>
 
