@@ -5,6 +5,8 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css"/>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap" rel="stylesheet">    
@@ -12,13 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
- 
   </head>
+
   <body>
 
-    <header>
-      <button id="logo-mainpage">
-        <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli"></a>
+    <header id="header">
+      <button onclick="location.href=location.href" id="logo-mainpage">
+        <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli">
       </button>
     </header>
 
@@ -26,18 +28,21 @@
     </nav>  
 
     <main>
-    <div id="homepage">
-      <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli"> 
-        <div id="buttonsFather">
-          <input type="button" id="firstbutton" class="buttons" value="About Studio">
-          <input type="button" id="secondbutton" class="buttons" value="Films">
-          <input type="button" id="thirdbutton" class="buttons" value="Statistics">
-        </div>
-    </div>
 
+      <div id="homepage">
+        <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli">
+        <img src="images/backgound-phone.jpeg" id="imagen2-1" alt="Imagen con personajes de las películas del Studio Ghibli"> 
+          <div id="buttonsFather">
+            <input type="button" id="firstbutton" class="buttons" value="About Studio">
+            <input type="button" id="secondbutton" class="buttons" value="Films">
+            <input type="button" id="thirdbutton" class="buttons" value="Statistics">
+          </div>
+      </div>
+    </main>
 
-    <div id="studiopage" class="pages">
-      <img src="images/background-image.jpeg" id="background-image">
+      <div id="studiopage" class="pages">
+        <img src="images/background-image.jpeg" id="background-image">
+        <img src="images/background-phone2.jpeg" id="background-image2">
         <div id="rectangle1">
 
           <div id="foundersimage">
@@ -51,49 +56,89 @@
 
         </div>   
       </div>
-    </div>
 
-    <div id="filmspage" class="pages">
-      <input type="text" placeholder="Search" id="buscador"> 
-      <button type="button" id="btn-buscar"> BUSCAR </button>
+      <div id="filmspage" class="pages">
 
-      <div id="generalContainer">
-        <div id="filterList"> 
+        <div id="frame">
+          <div id="filmsButton">FILMS</div>
+          <div id="search">
+            <input type="text" placeholder="Search" id="buscador"> 
+          </div>
+        </div> 
+
+        <div id="popularityAndAlphabetFilter">
+
+          <ul id="popularityFilter">
+            <li id="popularityID" class="sortFilters">Popularity
+          
+            <ul>
+              <li value="0" class="popularity">Score: 100</li>
+              <li value="1" class="popularity">Score: 97</li>
+              <li value="2" class="popularity">Score: 96</li>
+              <li value="3" class="popularity">Score: 95</li>
+              <li value="4" class="popularity">Score: 94</li>
+              <li value="5" class="popularity">Score: 93</li>
+              <li value="6" class="popularity">Score: 92</li>
+              <li value="7" class="popularity">Score: 91</li>
+              <li value="8" class="popularity">Score: 89</li>
+              <li value="9" class="popularity">Score: 87</li>
+              <li value="10" class="popularity">Score: 83</li>
+              <li value="11" class="popularity">Score: 78</li>
+              <li value="12" class="popularity">Score: 75</li>
+              <li value="13" class="popularity">Score: 41</li>
+            </ul>
+            </li>  
+          <div class="polygon"></div>
+          </ul>
+
+          <ul id="atoz" class="sortFilters">A-Z</ul> 
+          <ul id="ztoa" class="sortFilters">Z-A</ul>
+
+        </div>
+        <br>
+        <br>
+        <div id="generalContainer">
+          <div id="filterList"> 
           <div id="rectangle2">
 
-            <ul id="containerListDirector" class="tittle"><b>Director</b>
-              <li value="0" class="listDirector" id="Hayao Miyazaki">Hayao Miyazaki</li>
-              <li value="1" class="listDirector">Isao Takahata</li>
-              <li value="2" class="listDirector" >Yoshifumi Kondō</li>
-              <li value="3" class="listDirector">Hiroyuki Morita</li>
-              <li value="4" class="listDirector">Gorō Miyazaki</li>
-              <li value="5" class="listDirector">Hiromasa Yonebayashi</li>
+            <ul id="containerListDirector"> 
+              <div class="tittle">Director</div>
+                <li value="0" class="listDirector">Hayao Miyazaki</li>
+                <li value="1" class="listDirector">Isao Takahata</li>
+                <li value="2" class="listDirector" >Yoshifumi Kondō</li>
+                <li value="3" class="listDirector">Hiroyuki Morita</li>
+                <li value="4" class="listDirector">Gorō Miyazaki</li>
+                <li value="5" class="listDirector">Hiromasa Yonebayashi</li>
             </ul>
 
-          <div id="separate2" class="separates"></div>
+            <br>
 
-            <ul id="containerListProducer" class="tittle"><b>Producer</b>
-              <li value="0" class="listProducer">Isao Takahata</li>
-              <li value="1" class="listProducer">Hayao Miyazaki</li>
-              <li value="2" class="listProducer">Toru Hara</li>
-              <li value="3" class="listProducer">Toshio Suzuki</li>
-              <li value="4" class="listProducer">Yoshiaki Nishimura</li>
+            <ul id="containerListProducer">
+              <div class="tittle">Producer</div>
+                <li value="0" class="listProducer">Isao Takahata</li>
+                <li value="1" class="listProducer">Hayao Miyazaki</li>
+                <li value="2" class="listProducer">Toru Hara</li>
+                <li value="3" class="listProducer">Toshio Suzuki</li>
+                <li value="4" class="listProducer">Yoshiaki Nishimura</li>
             </ul>
 
           </div>
         </div>
         <div id="filmPosterImages" class="filmPosterImages">
-       </div>
+        </div> 
+        <div id="NamePosterImages" class="NamePosterImages">
+        </div>
       </div>
-    </div>
+    </div>  
 
+    
     <div id="infoFilmsPage" class="pages">
 
       <div id="containerInfoFilmsPage">
         
         <div id="containerFilmData">
           <div id="poster_infoFilmsPage"></div>
-          <div id="filmsInfo">
+            <div id="filmsInfo">
             <div id="title" class="dataInfoFilm"></div>
             <br> 
             <div id="releaseDate" class="dataInfoFilm"></div>
@@ -108,48 +153,52 @@
           </div>
         </div>  
 
+        <br><br>
+
         <div class="characters-places-and-vehicles">
-          <p class="titlesbyData">characters</p>
-            <div id="characters" class="characters"></div>
 
-          <p class="titlesbyData">Places</p>
-            <div id="places" class="places"></div>
+          <div id="characterssection">
+            <p class="titlesbyData">CHARACTERS</p>
+              <div id="characters" class="characters"></div>
+          </div>    
+          <br><br>
 
-          <p class="titlesbyData">Vehicles</p>  
-            <div id="vehicles" class="vehicles"></div>
+          <div id="placessection">
+            <p class="titlesbyData">PLACES</p>
+              <div id="places" class="places"></div>
+          </div>   
+          <br><br> 
+          
+          <div id="vehiclessection">
+            <p class="titlesbyData">VEHICLES</p>  
+              <div id="vehicles" class="vehicles"></div>
+          </div>  
+
         </div>
       </div>  
-
     </div>
 
-      <div id="popupPage" class="pages">
-        <div id="infoImg">
-          <h5 id="characterimg" class="generalInfo"></h5>
-          <h5 id="locationimg" class="generalInfo"></h5>
-        </div>
-
+    <div id="popupPage" class="pages">
+      <div class="container-general">
+        <div id="popupImage" class="generalInfo"></div>
         <div id="infoData">
-          <h5 id="charactername" class="generalInfo"></h5>
-          <h5 id="charactergender" class="generalInfo"></h5>
-          <h5 id="characterage" class="generalInfo"></h5>
-          <h5 id="charactereyes_color" class="generalInfo"></h5>
-          <h5 id="characterhair_color" class="generalInfo"></h5>
-          <h5 id="characterspecie" class="generalInfo"></h5>
-
-          <h5 id="locationName" class="generalInfo"></h5>
-          <h5 id="locationClimate" class="generalInfo"></h5>
-          <h5 id="locationTerrain" class="generalInfo"></h5>
-          <h5 id="locationSurface_Water" class="generalInfo"></h5>
-          <h5 id="locationResidents" class="generalInfo"></h5>
+          <h5 id="firstData" class="generalInfoTitle"></h5>
+          <h5 id="secondData" class="generalInfo"></h5>
+          <h5 id="thirdData" class="generalInfo"></h5>
+          <h5 id="fourthData" class="generalInfo"></h5>
+          <h5 id="fifthData" class="generalInfo"></h5>
+          <h5 id="sixthData" class="generalInfo"></h5>
         </div>
-      
-        <input type="button" id="close" value="x">
-
       </div>
+    </div>
 
-  </main>
+    <section class="pages" id="chart-Content">
+      <h3>Score of films directed by Hayao Miyazaki</h3>
+      <canvas id="myCharts"></canvas>
+    </section>
 
-  <footer></footer>
+    <footer>
+    </footer>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>

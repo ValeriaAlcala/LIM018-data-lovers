@@ -16,6 +16,7 @@
     "@babel/core": "^7.6.2",
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "babel-jest": "^27.0.1",
+    "chart.js": "^3.8.0",
     "eslint": "^8.3.0",
     "gh-pages": "^3.1.0",
     "htmlhint": "^1.0.0",
@@ -27,4 +28,3 @@
     "node": ">=14.x"
   }
 }
-

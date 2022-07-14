@@ -1,8 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .pages{
     display: none;
 }
 
+#popupPage{
+    display: none;
+}
+
 header{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
 }
@@ -22,10 +33,14 @@ body{
     border: none;
 }
 
+#imagen2-1, #background-image2{
+    display: none;
+}
+
 .logo{
     height: 95px;
     width: 185px;
-    padding: 8px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -90,6 +105,28 @@ h2{
     margin-right: 55px;
 }
 
+#frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 35px 0px 20px;
+    margin-top: 20px;
+}
+
+#selectors{
+    display: flex;
+    margin-top: 10px;
+}
+
+.buttonsfilmsPage, h4{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    color: #4A7375;
+}
+
 #buscador{
     background: #C7E3E3;
     border-radius: 8px;
@@ -98,40 +135,50 @@ h2{
     color: #4A7375;
     width: 190px;
     height: 18px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 16px;
 }
 
 ::placeholder{
     color: #FFFFFF;
     font-family: 'Libre Franklin', sans-serif;
+    font-size: 13px;
     font-weight: 400;
 }
 
 #generalContainer{
     display: flex;
+    padding-left: 20px;
 }
 
 #rectangle2{
-    width: 280px;
-    height: 467px;
-    border-radius: 8px;
+    border-radius: 20px;
+    width: 200px;
     background-color: #C7E3E3;
+    padding: 24px 0 20px 28px;
+    display: flex;
+    flex-direction: column;
+}
+
+#singlePoster{
+    width: 200px;
+    height: 285px;
+}
+
+.tittle{
+    font-size: 19px;
+    color: #4A7375;
+    font-family: 'Lora', serif;
+    padding-bottom: 10px;
 }
 
 .listProducer,.listDirector{
     font-family: 'Libre Franklin', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 25px;
     color: #4A7375;
-}
-
-.separates{
-    width: 243px;
-    height: 2px;
-    background-color: #4A7375;
 }
 
 ul{
@@ -142,30 +189,86 @@ li{
     cursor: pointer;
 }
 
-.filmPosterImages{
+#popularityAndAlphabetFilter{
     display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.polygon{
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid #4A7375;
+    margin: 4px;
+}
+
+#popularityID ul li {
+    display: block;
+    background-color: #C7E3E3;
+    color: #4A7375;
+    padding: 4px 4px 4px 4px;
+    margin: 4px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+#popularityID li:hover{
+    background-color: #FFFFFF;
+} 
+
+#popularityFilter{
+    display: flex;
+}
+
+#popularityFilter li ul{
+    display: none;
+    position:absolute
+}
+
+#popularityFilter li:hover>ul{
+    display: block;
+}
+
+.sortFilters{
     cursor: pointer;
 }
 
+.filmPosterImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .filmImages{
-    padding: 20px;
-    width: 179px;
-    height: 246px;
+    width: 169px;
+    height: 236px;
     cursor: pointer;
+    border-style: solid;
+    border-color: #4A7375;
+    border-width: 5px;
+    margin-bottom: 40px;
+    margin-left: 30px;
 }
 
 #containerInfoFilmsPage{
     background-color: #F5DDDD;
     border-radius: 20px;
-    margin-right: 140px;
-    margin-left: 140px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 50px;
 }
 
 #containerFilmData{
-    background-color:#FFFFFF;
     display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    align-items: center;
 }
 
 #poster_infoFilmsPage{
@@ -177,27 +280,252 @@ li{
 }
 
 #filmsInfo{
-    padding-left: 17px;
-    padding-right: 39px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    align-content: center;
 }
 
-.characters,.places,.vehicles{
+.characters,.places,.vehicles, #filmsButton{
     cursor: pointer;
 }
 
 #title{
     font-family: 'Lora', serif;
     font-size: 34px;
+    color: #4A7375;
 }
 
-#releaseDate,#producer, #director{
-    font-size: 16px;
+#releaseDate,#producer, #director, #rtScore, .sortFilters{
+    font-size: 15px;
     font-family: 'Libre Franklin', sans-serif;
+    color: #4A7375;
 }
 
 #description{
     font-size: 17px;
     font-family: 'Libre Franklin', sans-serif;
+    color: #4A7375;
 }
 
+.titlesbyData, #filmsButton {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: #4A7375;
+}
 
+#characterssection, #placessection, #vehiclessection{
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+}
+
+.titlesbyData{
+    margin: 20px;
+}
+
+.charactersclass{
+    width: 97px;
+    height: 136px;
+    border-radius: 16px;
+    margin: 20px;
+}
+
+.locationsclass, .vehiclesclass{
+    height: 127px;
+    width: 166px;
+    border-radius: 16px;
+    margin: 20px;
+}
+ 
+.container-general{
+    width: 20%;
+    background-color: #4A7375;
+    margin: auto;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.generalInfoTitle{
+    font-family: 'Lora', serif;
+    font-size: 28px;
+}
+
+.generalInfo{
+    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 25px;
+}
+
+#infoData{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+#firstData{
+    font-size: 2.5em;
+}
+
+#chart-Content{
+    width: 675px;
+}
+
+h3{
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: #4A7375;
+    padding-left: 140px;
+    padding-top: 70px;
+}
+
+/* For mobile phones: */
+
+@media (max-width: 1200px){
+
+.buttons{
+    position: relative;
+    font-size: 40px;
+    margin: 10px;
+}
+
+header{
+    justify-content: center;
+}
+
+#imagen2, #background-image{
+    display: none;
+}
+
+#imagen2-1 , #background-image2{
+    display: block;
+    width: 980px;
+    height: 1600px;
+    position: absolute;
+}
+
+.logo{
+    height: 170px;
+    width: 350px;
+}
+    
+#buttonsFather{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 630px;
+    padding-left: 330px;
+}
+
+#rectangle1{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin-left: 130px;
+}
+
+h1{
+    font-size: 55px;
+}
+
+h2{
+    margin: 35px;
+    font-size: 30px;
+    width: 680px;
+}
+
+#founders{
+    height: 430px;
+    width: 295px;
+}
+
+#buscador {
+    border-radius: 18px;
+    width: 210px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.titlesbyData, #filmsButton, .tittle, h3 {
+    font-size: 32px;
+}
+
+.polygon{
+    margin: 14px;
+}
+
+.listProducer, .listDirector {
+    font-size: 25px;
+    line-height: 45px;
+}
+
+#rectangle2{
+    width: 276px;
+}
+
+#releaseDate, #producer, #director, #rtScore, .sortFilters, #description {
+    font-size: 23px;
+}
+
+.filmImages {
+    width: 242px;
+    height: 325px;
+    border-width: 9px;
+    margin-bottom: 40px;
+    margin-left: 12px;
+}
+
+#singlePoster {
+    width: 222px;
+    height: 325px;
+}
+
+#filmsInfo{
+    padding-left: 72px;
+}
+
+.charactersclass {
+    width: 147px;
+    height: 186px;
+    border-radius: 16px;
+    margin: 10px;
+    margin-left: 54px;
+}
+
+.locationsclass, .vehiclesclass {
+    height: 177px;
+    width: 216px;
+    border-radius: 16px;
+    margin: 10px;
+    margin-left: 54px;
+}
+
+.container-general {
+    width: 50%;
+    padding: 4em 1.5em;
+    border-radius: 30px;
+    margin-top: 35%;
+}
+
+.generalInfo {
+    font-size: 35px;
+    line-height: 60px;
+}
+
+#chart-Content{
+    width: 875px;
+    padding-left: 20px;
+}
+
+}
