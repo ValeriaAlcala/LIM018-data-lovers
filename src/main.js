@@ -1,5 +1,5 @@
 //import { doctypeHTML5 } from 'htmlhint';
-import { Chart } from 'chart.js';
+//import { Chart } from 'http://chart.js/';
 import {producerFilter,directorFilter,scoreFilter,AtoZ,ZtoA,searchFilm} from './data.js';
 import data from './data/ghibli/ghibli.js';
 
@@ -406,6 +406,4 @@ function chartPage(){
        }]
      }
    })
-   // eslint-disable-next-line no-console
-   console.log(myChart)
   }
