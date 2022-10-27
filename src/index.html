@@ -19,120 +19,130 @@
   <body>
 
     <header id="header">
-      <button onclick="location.href=location.href" id="logo-mainpage">
+
+      <button onclick="location.href=location.href" id="logo-studioGhibli">
         <img src="images/logo-studio.png" id="imagen1" class="logo" alt="Logo Studio Ghibli">
       </button>
+
+      <div id="buttonsFirstView">
+        <input type="button" id="firstbutton" class="buttons" value="About Studio">
+        <input type="button" id="secondbutton" class="buttons" value="Films">
+        <input type="button" id="thirdbutton" class="buttons" value="Statistics">
+      </div>
+
     </header>
 
-    <nav>
-    </nav>  
+    <section id="container-principalView">
+      <main>
 
-    <main>
+        <div id="homepage">
+          <div id="elements-Text">
+            <p id="text-p">Once you meet someone, you never really forget them. It just takes a while for your memory to come back to you.</p>
+            <br>
+            <img src="images/logo-chihiro.png" id="logo-chihiro" alt="Logo de la película: El viaje de Chihiro">
+          </div  >
+          <img src="images/niña-image.png" id="girl-image" alt="BO de El viaje de Chihiro">
+        </div>
+  
+      </main>
+    </section>
 
-      <div id="homepage">
-        <img src="images/ventana-1.png" id="imagen2" alt="Imagen con personajes de las películas del Studio Ghibli">
-        <img src="images/backgound-phone.jpeg" id="imagen2-1" alt="Imagen con personajes de las películas del Studio Ghibli"> 
-          <div id="buttonsFather">
-            <input type="button" id="firstbutton" class="buttons" value="About Studio">
-            <input type="button" id="secondbutton" class="buttons" value="Films">
-            <input type="button" id="thirdbutton" class="buttons" value="Statistics">
-          </div>
-      </div>
-    </main>
+      <section id="studiopage" class="pages">
+        <div id="info-AboutStudio">
 
-      <div id="studiopage" class="pages">
-        <img src="images/background-image.jpeg" id="background-image">
-        <img src="images/background-phone2.jpeg" id="background-image2">
-        <div id="rectangle1">
-
-          <div id="foundersimage">
+          <!-- <div id="foundersimage"> -->
             <img src="images/founders.jpeg" id="founders" alt="studio ghibli founders">
-          </div>
+          <!-- </div> -->
 
           <div id="text">
             <h1>About Studio Ghibli</h1>
-            <h2>Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films. Its mascot and most recognizable symbol is a character named Totoro, a giant catlike spirit from the 1988 anime film My Neighbor Totoro. Among the studio's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008). The studio was founded on June 15, 1985, by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several games.</h2>
+            <br>
+            <p>Studio Ghibli Inc. is a Japanese animation film studio headquartered in Koganei, Tokyo. It is best known for its animated feature films, and has also produced several short subjects, television commercials, and two television films. Its mascot and most recognizable symbol is a character named Totoro, a giant catlike spirit from the 1988 anime film My Neighbor Totoro. Among the studio's highest-grossing films are Spirited Away (2001), Howl's Moving Castle (2004) and Ponyo (2008). The studio was founded on June 15, 1985, by directors Hayao Miyazaki and Isao Takahata and producer Toshio Suzuki, after the successful performance of Topcraft's Nausicaä of the Valley of the Wind (1984). It has also collaborated with video game studios on the visual development of several games.</p>
           </div>
 
         </div>   
-      </div>
+      </section>
 
-      <div id="filmspage" class="pages">
+      <section id="filmspage" class="pages">
 
-        <div id="frame">
-          <div id="filmsButton">FILMS</div>
-          <div id="search">
-            <input type="text" placeholder="Search" id="buscador"> 
-          </div>
-        </div> 
-
-        <div id="popularityAndAlphabetFilter">
-
-          <ul id="popularityFilter">
-            <li id="popularityID" class="sortFilters">Popularity
+        <div id="container-Filmspage">
           
-            <ul>
-              <li value="0" class="popularity">Score: 100</li>
-              <li value="1" class="popularity">Score: 97</li>
-              <li value="2" class="popularity">Score: 96</li>
-              <li value="3" class="popularity">Score: 95</li>
-              <li value="4" class="popularity">Score: 94</li>
-              <li value="5" class="popularity">Score: 93</li>
-              <li value="6" class="popularity">Score: 92</li>
-              <li value="7" class="popularity">Score: 91</li>
-              <li value="8" class="popularity">Score: 89</li>
-              <li value="9" class="popularity">Score: 87</li>
-              <li value="10" class="popularity">Score: 83</li>
-              <li value="11" class="popularity">Score: 78</li>
-              <li value="12" class="popularity">Score: 75</li>
-              <li value="13" class="popularity">Score: 41</li>
-            </ul>
-            </li>  
-          <div class="polygon"></div>
-          </ul>
+          <div id="popularityAndAlphabetFilter">
 
-          <ul id="atoz" class="sortFilters">A-Z</ul> 
-          <ul id="ztoa" class="sortFilters">Z-A</ul>
+            <ul id="atoz" class="sortFilters">A-Z</ul> 
+            <ul id="ztoa" class="sortFilters">Z-A</ul>
 
-        </div>
-        <br>
-        <br>
-        <div id="generalContainer">
-          <div id="filterList"> 
-          <div id="rectangle2">
-
-            <ul id="containerListDirector"> 
-              <div class="tittle">Director</div>
-                <li value="0" class="listDirector">Hayao Miyazaki</li>
-                <li value="1" class="listDirector">Isao Takahata</li>
-                <li value="2" class="listDirector" >Yoshifumi Kondō</li>
-                <li value="3" class="listDirector">Hiroyuki Morita</li>
-                <li value="4" class="listDirector">Gorō Miyazaki</li>
-                <li value="5" class="listDirector">Hiromasa Yonebayashi</li>
+            <ul id="popularityFilter">
+              <li id="popularityID" class="sortFilters">Popularity
+            
+                <ul>
+                  <li value="0" class="popularity">Score: 100</li>
+                  <li value="1" class="popularity">Score: 97</li>
+                  <li value="2" class="popularity">Score: 96</li>
+                  <li value="3" class="popularity">Score: 95</li>
+                  <li value="4" class="popularity">Score: 94</li>
+                  <li value="5" class="popularity">Score: 93</li>
+                  <li value="6" class="popularity">Score: 92</li>
+                  <li value="7" class="popularity">Score: 91</li>
+                  <li value="8" class="popularity">Score: 89</li>
+                  <li value="9" class="popularity">Score: 87</li>
+                  <li value="10" class="popularity">Score: 83</li>
+                  <li value="11" class="popularity">Score: 78</li>
+                  <li value="12" class="popularity">Score: 75</li>
+                  <li value="13" class="popularity">Score: 41</li>
+                </ul>
+              </li>  
+              <div class="polygon"></div>
             </ul>
 
-            <br>
-
-            <ul id="containerListProducer">
-              <div class="tittle">Producer</div>
-                <li value="0" class="listProducer">Isao Takahata</li>
-                <li value="1" class="listProducer">Hayao Miyazaki</li>
-                <li value="2" class="listProducer">Toru Hara</li>
-                <li value="3" class="listProducer">Toshio Suzuki</li>
-                <li value="4" class="listProducer">Yoshiaki Nishimura</li>
-            </ul>
+            <div id="search">
+              <input type="text" placeholder="Search" id="buscador"> 
+            </div>
 
           </div>
+
+          <br>
+          <br>
+
+          <div id="generalContainer">
+            <div id="filterList"> 
+              <div id="rectangle2">
+
+                <ul id="containerListDirector"> 
+                  <div class="tittle">Director</div>
+                    <li value="0" class="listDirector">Hayao Miyazaki</li>
+                    <li value="1" class="listDirector">Isao Takahata</li>
+                    <li value="2" class="listDirector" >Yoshifumi Kondō</li>
+                    <li value="3" class="listDirector">Hiroyuki Morita</li>
+                    <li value="4" class="listDirector">Gorō Miyazaki</li>
+                    <li value="5" class="listDirector">Hiromasa Yonebayashi</li>
+                </ul>
+
+                <br>
+
+                <ul id="containerListProducer">
+                  <div class="tittle">Producer</div>
+                    <li value="0" class="listProducer">Isao Takahata</li>
+                    <li value="1" class="listProducer">Hayao Miyazaki</li>
+                    <li value="2" class="listProducer">Toru Hara</li>
+                    <li value="3" class="listProducer">Toshio Suzuki</li>
+                    <li value="4" class="listProducer">Yoshiaki Nishimura</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div id="filmPosterImages" class="filmPosterImages"></div> 
+            <div id="NamePosterImages" class="NamePosterImages"></div>
+
+          </div>
+
         </div>
-        <div id="filmPosterImages" class="filmPosterImages">
-        </div> 
-        <div id="NamePosterImages" class="NamePosterImages">
-        </div>
-      </div>
-    </div>  
+          
+      </section>  
 
     
-    <div id="infoFilmsPage" class="pages">
+    <section id="infoFilmsPage" class="pages">
 
       <div id="containerInfoFilmsPage">
         
@@ -176,7 +186,7 @@
 
         </div>
       </div>  
-    </div>
+    </section>
 
     <div id="popupPage" class="pages">
       <div class="container-general">

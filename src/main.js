@@ -15,17 +15,28 @@ const chartsJs=document.getElementById("thirdbutton");
   chartsJs.addEventListener("click", chartPage);
 
 function aboutStudioPage(){
-  document.getElementById("homepage").style.display="none";
+  document.getElementById("container-principalView").style.display="none";
+  document.getElementById("chart-Content").style.display="none";
+  document.getElementById("filmspage").style.display="none";
+  document.getElementById("popupPage").style.display="none";
+  document.getElementById("infoFilmsPage").style.display="none";
   document.getElementById("studiopage").style.display="block";
-  document.body.style.backgroundColor = "#F5DDDD";
+
+  // document.body.style.backgroundColor = "#F5DDDD";
 }
 
 function filmspage() {
   document.getElementById("homepage").style.display="none";
+  document.getElementById("studiopage").style.display="none";
+  document.getElementById("chart-Content").style.display="none";
+  document.getElementById("popupPage").style.display="none";
+  document.getElementById("infoFilmsPage").style.display="none";
   document.getElementById("filmspage").style.display="block";
-  document.body.style.backgroundColor = "white";
-  const headerColor=document.getElementById("header");
-  headerColor.style.backgroundColor = "#F5DDDD";
+
+
+  // document.body.style.backgroundColor = "white";
+  // const headerColor=document.getElementById("header");
+  // headerColor.style.backgroundColor = "#F5DDDD";
 
   filmPoster();
   directorFilterFunction();
@@ -207,8 +218,8 @@ function singleData(i){
 
   document.getElementById("infoFilmsPage").style.display="block";
   document.getElementById("filmspage").style.display="none";
-    const headerColor=document.getElementById("header");
-    headerColor.style.backgroundColor = "#C7E3E3";
+    // const headerColor=document.getElementById("header");
+    // headerColor.style.backgroundColor = "#C7E3E3";
 
   //POSTER FILTRADO DE CADA PELICULA
   const posterSection = document.createElement('img');
@@ -379,16 +390,20 @@ function dataOfEachVehicles(datavehicles){
 
 function chartPage(){
   document.getElementById("homepage").style.display="none";
+  document.getElementById("studiopage").style.display="none";
+  document.getElementById("filmspage").style.display="none";
   document.getElementById("chart-Content").style.display="block";
-  document.body.style.backgroundColor = "white";
-  const headerColor=document.getElementById("header");
-  headerColor.style.backgroundColor = "#F5DDDD";
+  
+  // document.body.style.backgroundColor = "white";
+  // const headerColor=document.getElementById("header");
+  // headerColor.style.backgroundColor = "#F5DDDD";
 
   const ctx = document.getElementById("myCharts");
   const dataChart = ["Castle in the Sky", "My Neighbor Totoro", "Kiki's Delivery Service", "Porco Rosso", "Princess Mononoke","Spirited Away","Howl's Moving Castle","Ponyo on the Cliff by the Sea","The Wind Rises"]
   const dataChasrt2 = [95,93,96,94,92,97,87,92,89]
   
-   const myChart = new Chart (ctx, {
+   // eslint-disable-next-line no-undef
+   new Chart (ctx, {
      type: 'line',
      data: {
        labels: dataChart,
@@ -406,4 +421,5 @@ function chartPage(){
        }]
      }
    })
+   //console.log(myChart)
   }
