@@ -16,7 +16,6 @@ header{
 
 body{
     background-image: url(./images/principal-background.jpeg);
-    /* background-repeat: repeat-y; */
     background-color: rgba(58, 5, 5, 0.271);
     backdrop-filter: blur(5px);
     height: auto;
