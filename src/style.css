@@ -8,7 +8,6 @@
 }
 
 header{
-    /* width: 100%; */
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -16,10 +15,16 @@ header{
 
 body{
     background-image: url(./images/principal-background.jpeg);
-    background-color: rgba(58, 5, 5, 0.271);
-    backdrop-filter: blur(5px);
     height: auto;
     background-size: cover;
+    position: relative;
+}
+
+#blur{
+    background-color: rgba(58, 5, 5, 0.271);
+    backdrop-filter: blur(5px);
+    width: 100vw;
+    height: 100vh;
 }
 
 #logo-studioGhibli{
@@ -57,6 +62,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
     /* height: 100vh; */
     /* background-size: cover; */
 }
@@ -81,15 +87,19 @@ body{
 }
 
 #girl-image{
-    width: 38.3%;
+    width: 32.5%;
+
 }
 
 /* ABOUT STUDIO */
 
 #studiopage{
-    top: 30%;
-    right: 10%;
+    /* top: 30%;
+    right: 10%; */
     position: absolute;
+    transform: translate(13%, 13%);
+/* 
+    left: 10%; */
 }
 
 #info-AboutStudio{
