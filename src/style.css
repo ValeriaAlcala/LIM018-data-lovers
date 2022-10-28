@@ -76,7 +76,7 @@ body{
 #text-p{
     font-size: 35px;
     color: white;
-    font-family: 'Lora';
+    font-family: 'Lora', serif;
     width: 470px;
     line-height : 60px;
     text-align: center
@@ -87,7 +87,7 @@ body{
 }
 
 #girl-image{
-    width: 32.5%;
+    width: 30.6%;
 
 }
 
@@ -113,13 +113,13 @@ body{
 
 h1{
     font-size: 40px;
-    font-family: "Lora";
+    font-family: 'Lora', serif;
 }
 
 #text{
     width: 800px;
     color: rgb(255, 255, 255);
-    font-family: "Libre Franklin";
+    font-family: 'Libre Franklin', sans-serif;
     line-height : 30px;
 }
 
@@ -185,7 +185,7 @@ h1{
 
 .tittle{
     font-size: 25px;
-    color: #414141;
+    color: #101010;
     font-family: 'Lora', serif;
     padding-bottom: 10px;
 }
@@ -255,8 +255,6 @@ li, .sortFilters{
 #generalContainer{
     display: flex;
     padding-left: 20px;
-    background-color: rgba(58, 5, 5, 0.271);
-    backdrop-filter: blur(5px);
     height: 100vh;
 }
 
@@ -403,144 +401,57 @@ h3{
 
 /* For mobile phones: */
 
-/* @media (max-width: 1200px){
+@media (max-width: 1200px){
 
-.buttons{
-    position: relative;
-    font-size: 40px;
-    margin: 10px;
+body{
+    background-repeat: no-repeat;
 }
 
 header{
-    justify-content: center;
-}
-
-#imagen2, #background-image{
-    display: none;
-}
-
-#imagen2-1 , #background-image2{
-    display: block;
-    width: 980px;
-    height: 1600px;
-    position: absolute;
-}
-
-.logo{
-    height: 170px;
-    width: 350px;
-}
-    
-#buttonsFather{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    padding-top: 630px;
-    padding-left: 330px;
 }
 
-#rectangle1{
-    position: absolute;
-    text-align: center;
+.logo {
+    height: 231px;
+    width: 408px;
+}
+
+#buttonsFirstView{
     display: flex;
-    margin-top: 150px;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    margin-left: 130px;
+    justify-content: space-around;
 }
 
-h1{
-    font-size: 55px;
+.buttons{
+    font-size: 40px;
 }
 
-h2{
-    margin: 35px;
-    font-size: 30px;
-    width: 680px;
+#container-principalView{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}    
+
+#homepage{
+    display: flex;
+    flex-direction: column;
 }
 
-#founders{
-    height: 430px;
-    width: 295px;
+#logo-chihiro{
+    width: 455px;
 }
 
-#buscador {
-    border-radius: 18px;
-    width: 210px;
-    height: 30px;
-    font-size: 25px;
-    text-align: center;
+#text-p{
+    font-size: 65px;
+    width: 720px;
 }
 
-.titlesbyData, #filmsButton, .tittle, h3 {
-    font-size: 32px;
+#girl-image {
+    width: 128%;
 }
 
-.polygon{
-    margin: 14px;
-}
 
-.listProducer, .listDirector {
-    font-size: 25px;
-    line-height: 45px;
-}
 
-#rectangle2{
-    width: 276px;
-}
 
-#releaseDate, #producer, #director, #rtScore, .sortFilters, #description {
-    font-size: 23px;
 }
-
-.filmImages {
-    width: 242px;
-    height: 325px;
-    border-width: 9px;
-    margin-bottom: 40px;
-    margin-left: 12px;
-}
-
-#singlePoster {
-    width: 222px;
-    height: 325px;
-}
-
-#filmsInfo{
-    padding-left: 72px;
-}
-
-.charactersclass {
-    width: 147px;
-    height: 186px;
-    border-radius: 16px;
-    margin: 10px;
-    margin-left: 54px;
-}
-
-.locationsclass, .vehiclesclass {
-    height: 177px;
-    width: 216px;
-    border-radius: 16px;
-    margin: 10px;
-    margin-left: 54px;
-}
-
-.container-general {
-    width: 50%;
-    padding: 4em 1.5em;
-    border-radius: 30px;
-    margin-top: 35%;
-}
-
-.generalInfo {
-    font-size: 35px;
-    line-height: 60px;
-}
-
-#chart-Content{
-    width: 875px;
-    padding-left: 20px;
-}
-
-} */
