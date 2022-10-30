@@ -34,7 +34,7 @@
 
     </header>
 
-    <section id="container-principalView">
+    <section id="container-principalView" style="overflow-y:hidden">
       <main>
 
         <div id="homepage">
@@ -42,7 +42,7 @@
             <p id="text-p">Once you meet someone, you never really forget them. It just takes a while for your memory to come back to you.</p>
             <br>
             <img src="images/logo-chihiro.png" id="logo-chihiro" alt="Logo de la película: El viaje de Chihiro">
-          </div  id="pueba">
+          </div>
           <img src="images/girl-image.png" id="girl-image" alt="BO de El viaje de Chihiro">
         </div>
   
@@ -193,6 +193,7 @@
         <div id="popupImage" class="generalInfo"></div>
         <div id="infoData">
           <h5 id="firstData" class="generalInfoTitle"></h5>
+          <br>
           <h5 id="secondData" class="generalInfo"></h5>
           <h5 id="thirdData" class="generalInfo"></h5>
           <h5 id="fourthData" class="generalInfo"></h5>
@@ -203,8 +204,10 @@
     </div>
 
     <section class="pages" id="chart-Content">
-      <h3>Score of films directed by Hayao Miyazaki</h3>
-      <canvas id="myCharts"></canvas>
+      <div id="contentcharts">
+        <h3>Score of films directed by Hayao Miyazaki</h3>
+        <canvas id="myCharts"></canvas>
+      </div>  
     </section>
 
     <footer>

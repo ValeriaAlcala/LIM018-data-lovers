@@ -8,7 +8,7 @@
 }
 
 header{
-    height: auto;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
 }
@@ -25,6 +25,11 @@ body{
     backdrop-filter: blur(5px);
     width: 100vw;
     height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 #logo-studioGhibli{
@@ -62,9 +67,6 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-    /* height: 100vh; */
-    /* background-size: cover; */
 }
 
 #elements-Text{
@@ -87,8 +89,7 @@ body{
 }
 
 #girl-image{
-    width: 30.6%;
-
+    width: auto;
 }
 
 /* ABOUT STUDIO */
@@ -97,9 +98,7 @@ body{
     /* top: 30%;
     right: 10%; */
     position: absolute;
-    transform: translate(13%, 13%);
-/* 
-    left: 10%; */
+    transform: translate(0, 50%);
 }
 
 #info-AboutStudio{
@@ -131,12 +130,6 @@ h1{
 }
 
 /* Tercera pagina */
-
-#releaseDate, #producer, #director, #rtScore, .sortFilters{
-    font-size: 16.5px;
-    font-family: 'Libre Franklin', sans-serif;
-    color: #ffffff;
-}
 
 .polygon{
     width: 0;
@@ -258,83 +251,74 @@ li, .sortFilters{
     height: 100vh;
 }
 
-/* ENTRANDO A CADA PELICULA */
-
-
-
-
-
-
-
-
 #singlePoster{
     width: 200px;
     height: 285px;
 }
 
+/* ENTRANDO A CADA PELICULA */
+
 #containerInfoFilmsPage{
-    background-color: #F5DDDD;
-    border-radius: 20px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 50px;
-    padding: 50px;
+    background-color:rgba(58, 5, 5, 0.271);
+    margin:50px 100px;
+    padding: 40px;
 }
 
 #containerFilmData{
     display: flex;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
     align-items: center;
-    align-items: center;
-}
-
-#poster_infoFilmsPage{
-    padding-left: 20px;
-    width: 195px;
-    height: 297px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 #filmsInfo{
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 25px 20px;
     display: grid;
     align-content: center;
-}
-
-.characters,.places,.vehicles, #filmsButton{
-    cursor: pointer;
+    color: #101010;
 }
 
 #title{
     font-family: 'Lora', serif;
     font-size: 34px;
-    color: #4A7375;
+}
+
+#releaseDate, #producer, #director, #rtScore, .sortFilters{
+    font-size: 16.5px;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 #description{
     font-size: 17px;
     font-family: 'Libre Franklin', sans-serif;
-    color: #4A7375;
 }
 
-.titlesbyData, #filmsButton {
-    font-family: 'Lora', serif;
-    font-size: 28px;
-    color: #4A7375;
+
+#poster_infoFilmsPage{
+    padding: 20px;
+    width: 195px;
+    height: 297px;
 }
 
 #characterssection, #placessection, #vehiclessection{
     display: flex;
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 40px;
     flex-direction: column;
+}
+
+.titlesbyData, #filmsButton, .generalInfoTitle{
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    color: #101010;
 }
 
 .titlesbyData{
     margin: 20px;
+}
+
+.characters,.places,.vehicles, #filmsButton{
+    cursor: pointer;
 }
 
 .charactersclass{
@@ -350,61 +334,63 @@ li, .sortFilters{
     border-radius: 16px;
     margin: 20px;
 }
- 
+
+/* EACH CHARACTER DESKTOP */
 .container-general{
-    width: 20%;
-    background-color: #4A7375;
-    margin: auto;
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 2em 1.5em;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-top: 30px;
-}
-
-.generalInfoTitle{
-    font-family: 'Lora', serif;
-    font-size: 28px;
+    margin-top: 60px;
 }
 
 .generalInfo{
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Libre Franklin', sans-serif;
-    line-height: 25px;
+    line-height: 40px;
+}
+
+#firstData{
+    font-size: 35px;
+}
+
+#characterImageid, #locationsImageid{
+    width: 250px;
+    margin-right: 30px;
 }
 
 #infoData{
     display: flex;
-    color: white;
+    color: #101010;
     flex-direction: column;
     align-items: center;
 }
 
-#firstData{
-    font-size: 2.5em;
-}
-
-#chart-Content{
+#contentcharts{
+    display: flex;
+    flex-direction: column;
     width: 675px;
+    align-items: center;
+    background-color:rgba(58, 5, 5, 0.271);
+    padding: 40px;
+    border-radius: 30px;
 }
 
 h3{
     font-family: 'Lora', serif;
     font-size: 24px;
-    color: #4A7375;
-    padding-left: 140px;
-    padding-top: 70px;
+    color: #ffffff;
 }
-
-
 
 /* For mobile phones: */
 
 @media (max-width: 1200px){
 
-body{
-    background-repeat: no-repeat;
+#blur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
@@ -420,11 +406,16 @@ header{
 #buttonsFirstView{
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
 
 .buttons{
-    font-size: 40px;
+    font-size: 41px;
 }
+
+
+
+/* MAIN PAGE CSS MOBILE */
 
 #container-principalView{
     display: flex;
@@ -436,6 +427,7 @@ header{
 #homepage{
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 #logo-chihiro{
@@ -443,14 +435,52 @@ header{
 }
 
 #text-p{
-    font-size: 65px;
-    width: 720px;
+    font-size: 50px;
+    width: 760px;
+    line-height : 90px;
+
 }
 
 #girl-image {
-    width: 128%;
+    display: flex;
+    width: 116%;
 }
 
+/* ABOUT STUDIO MOBILE CSS */
+
+#studiopage{
+    position: absolute;
+    transform: translate(0%,25%);
+}
+
+#info-AboutStudio {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 60px 60px 0px;
+    background-color: rgba(58, 5, 5, 0.271);
+}
+
+h1{
+    font-size: 60px;
+    font-family: 'Lora', serif;
+}
+
+#text{
+    width: 720px;
+    color: rgb(255, 255, 255);
+    font-family: 'Libre Franklin', sans-serif;
+    line-height : 50px;
+    font-size: 30px;
+}
+
+#founders {
+    height: 600px;
+    width: 465px;
+    margin-top: 40px;
+    border-radius: 50px;
+}
+
+/* STATISTICS CSS MOBILE */
 
 
 

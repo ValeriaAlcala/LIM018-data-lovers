@@ -26,5 +26,19 @@
   },
   "engines": {
     "node": ">=14.x"
-  }
+  },
+  "description": "## Índice",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeriaAlcala/LIM018-data-lovers.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ValeriaAlcala/LIM018-data-lovers/issues"
+  },
+  "homepage": "https://github.com/ValeriaAlcala/LIM018-data-lovers#readme"
 }

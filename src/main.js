@@ -373,26 +373,29 @@ function dataOfEachVehicles(datavehicles){
 
   //NOMBRE DE CADA VEHICULO
   let vehicleName=datavehicles.name;
-  document.getElementById("firstData").innerHTML=vehicleName;
+  document.getElementById("firstData").innerHTML=("Name: "+vehicleName);
 
   //DESCRIPCION DE CADA VEHICULO
   let vehicleDescription=datavehicles.description;
-  document.getElementById("secondData").innerHTML=vehicleDescription;
+  document.getElementById("secondData").innerHTML=("Description: "+vehicleDescription);
 
   //TIPO DE VEHICULO
   let typeOfVehicle=datavehicles.type;
-  document.getElementById("thirdData").innerHTML=typeOfVehicle;
+  document.getElementById("thirdData").innerHTML=("Vehicle class: "+typeOfVehicle);
 
   //SUPERFICIE CON AGUA DE CADA LUGAR
   let vehiclePilot=datavehicles.pilot.name;
-  document.getElementById("fourthData").innerHTML=vehiclePilot;
+  document.getElementById("fourthData").innerHTML=("Pilot: "+vehiclePilot);
 }  
 
 function chartPage(){
   document.getElementById("homepage").style.display="none";
   document.getElementById("studiopage").style.display="none";
   document.getElementById("filmspage").style.display="none";
+  document.getElementById("popupPage").style.display="none";
+  document.getElementById("infoFilmsPage").style.display="none";
   document.getElementById("chart-Content").style.display="block";
+
   
   // document.body.style.backgroundColor = "white";
   // const headerColor=document.getElementById("header");
@@ -411,13 +414,13 @@ function chartPage(){
          label: "Popularity",
          data: dataChasrt2,
          backgroundColor: [
-           'rgba(255, 99, 132, 0.2)',
-           'rgba(54, 162, 235, 0.2)',
-           'rgba(255, 206, 86, 0.2)',
-           'rgba(75, 192, 192, 0.2)',
-           'rgba(153, 102, 255, 0.2)',     
+           'rgba(0, 0, 0, 0.8)',
+          //  'rgba(0,0,0, 0.2)',
+          //  'rgba(0, 0, 0, 0.2)',
+          //  'rgba(0, 0, 0, 0.2)',
+          //  'rgba(153, 102, 255, 0.2)',     
          ],
-         borderWidth: 1.0,
+         borderWidth: 4,
        }]
      }
    })
